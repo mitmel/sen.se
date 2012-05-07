@@ -1,0 +1,7 @@
+[sen_se]
+# enter your sen.se API key below
+api_key=abcdefghijklmnop123456
+[lmsensors]
+# entries here are LMSENSOR_LABEL = SEN.SE_FEED_ID
+temp1 = 123
+fan1  = 124
