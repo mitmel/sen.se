@@ -24,5 +24,6 @@ class SenseDevice:
 
         req.add_data(json.dumps(self.data).encode('utf-8'))
         res = urllib2.urlopen(req)
+        self.data = []
         return res
 
