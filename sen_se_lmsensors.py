@@ -37,7 +37,8 @@ if __name__=='__main__':
             try:
                 for id, feature in features.iteritems():
                     print id, feature.get_value()
-                    res = dev.publish(id, feature.get_value())
+                    dev.add_value(id, feature.get_value())
+                res = dev.publish()
             except urllib2.HTTPError, e:
                 print "".join(e.readlines())
                 print "waiting for next event..."
